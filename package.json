@@ -1,6 +1,6 @@
 {
   "name": "chainproxy",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "a module help you make calling chain",
   "engines": {
     "node":">=6.0.0"
