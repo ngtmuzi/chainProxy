@@ -1,4 +1,4 @@
-# magicProxy
+# chainProxy
 A module help you make calling chain.
 I like `bluebird` but I hate some method like `.get` and `.call`, it's ugly!
 So I make this module make sync calling to be easy like spark language

@@ -1,5 +1,5 @@
 {
-  "name": "magicproxy",
+  "name": "chainproxy",
   "version": "1.0.0",
   "description": "a module help you make calling chain",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ngtmuzi/magicProxy.git"
+    "url": "git+https://github.com/ngtmuzi/chainProxy.git"
   },
   "keywords": [
     "Proxy"
@@ -16,7 +16,7 @@
   "author": "ngtmuzi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ngtmuzi/magicProxy/issues"
+    "url": "https://github.com/ngtmuzi/chainProxy/issues"
   },
-  "homepage": "https://github.com/ngtmuzi/magicProxy#readme"
+  "homepage": "https://github.com/ngtmuzi/chainProxy#readme"
 }
