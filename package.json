@@ -1,6 +1,6 @@
 {
   "name": "chainproxy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a module help you make calling chain",
   "main": "index.js",
   "scripts": {
