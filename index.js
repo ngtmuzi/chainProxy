@@ -9,6 +9,8 @@ var handle = {
     //set prototype to base Proxy Object _
     if (property === 'prototype') return _;
 
+    //is number
+    if (!isNaN(+property)) return new Proxy(target.bind(null, `[${property}]`), handle);
     //return a new Proxy, go on
     return new Proxy(target.bind(null, '.' + property), handle);
   },
@@ -41,10 +43,6 @@ var handle = {
 };
 
 /**
- * @example
- Promise.resolve({a: 12333})
- .then(_.a.toString().split('').length)
- .then(console.log.bind(null, 'result:'), console.error.bind(null, 'catch error:'));
  * @type {Function}
  */
 var _ = module.exports = new Proxy(receiveFn, handle);

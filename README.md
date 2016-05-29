@@ -15,15 +15,15 @@ you can use it like:
 var _ = require('chainproxy')
 
 Promise.resolve({a: 12333})
- .then(_.a.toString().split('').length)
- .then(console.log.bind(null, 'result:'), console.error.bind(null, 'catch error:'));
+  .then(_.a.toString().split('')[0].toString().replace('1', 'replaceStr').length)
+  .then(console.log.bind(null, 'result:'), console.error.bind(null, 'catch error:'));
 ```
 
 this module actually create function like that
 
 ```javascript
 function (args, _){
-  return _.a.toString().split(args[0]).length
+  _.a.toString().split(args[0])[args[1]].toString().replace(args[2], args[3]).length
 }
 ```
 so you can know it's vary quick and easy-use
