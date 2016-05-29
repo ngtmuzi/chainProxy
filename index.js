@@ -35,8 +35,6 @@ var handle = {
 
       var finalFn = new Function(['args', '_'], fnStr);
 
-      console.log(finalFn.toString())
-
       return finalFn(args, argumentsList[0]);
     }
   }
