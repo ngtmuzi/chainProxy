@@ -24,7 +24,7 @@ var handle = {
       //get the calling chain
       var chains = target();
       //pick arguments
-      var args = [].concat(chains.filter(Array.isArray));
+      var args = [].concat(...chains.filter(Array.isArray));
 
       //make function body
       var argNum = 0;
@@ -34,6 +34,8 @@ var handle = {
       }, 'return _');
 
       var finalFn = new Function(['args', '_'], fnStr);
+
+      console.log(finalFn.toString())
 
       return finalFn(args, argumentsList[0]);
     }
