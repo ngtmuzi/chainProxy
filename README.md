@@ -12,7 +12,7 @@ this module only can run in NodeJs6 because it use `Proxy`
 you can use it like:
 
 ```javascript
-var _ = require('magicProxy')
+var _ = require('chainproxy')
 
 Promise.resolve({a: 12333})
  .then(_.a.toString().split('').length)
