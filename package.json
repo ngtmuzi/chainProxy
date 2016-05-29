@@ -2,6 +2,9 @@
   "name": "chainproxy",
   "version": "1.0.1",
   "description": "a module help you make calling chain",
+  "engines": {
+    "node":">=6.0.0"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
