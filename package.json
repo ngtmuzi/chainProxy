@@ -1,0 +1,22 @@
+{
+  "name": "magicproxy",
+  "version": "1.0.0",
+  "description": "a module help you make calling chain",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngtmuzi/magicProxy.git"
+  },
+  "keywords": [
+    "Proxy"
+  ],
+  "author": "ngtmuzi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ngtmuzi/magicProxy/issues"
+  },
+  "homepage": "https://github.com/ngtmuzi/magicProxy#readme"
+}
