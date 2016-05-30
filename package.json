@@ -1,13 +1,13 @@
 {
   "name": "chainproxy",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "a module help you make calling chain",
   "engines": {
     "node":">=6.0.0"
   },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/test.js"
   },
   "repository": {
     "type": "git",
