@@ -3,7 +3,6 @@
  */
 'use strict';
 const receiveFn = (...args) => args;
-const voidArgs  = Symbol('voidArgs');
 
 /**
  * chain proxy maker
@@ -17,11 +16,14 @@ const chainProxy = module.exports = function (defaultValue) {
     get: function (target, property, receiver) {
       //set prototype to base Proxy Object _
       if (property === 'prototype') return _;
+      if (property === 'apply') return target.apply;
+      if (property === 'call') return target.call;
+      if (property === 'bind') return target.bind;
 
       //is number
       if (!isNaN(+property)) return new Proxy(target.bind(null, `[${property}]`), handle);
       //return a new Proxy, go on
-      return new Proxy(target.bind(null, '.' + property), handle);
+      else return new Proxy(target.bind(null, '.' + property), handle);
     },
 
     apply: function (target, thisArg, argumentsList) {
